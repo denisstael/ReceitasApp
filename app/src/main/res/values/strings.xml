@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Receitas</string>
+    <string name="nova_receita">Nova Receita</string>
+    <string name="nome">Nome</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="modo_preparo">Modo de Preparo</string>
+    <string name="salvar">Salvar</string>
+    <string name="excluir">Excluir</string>
+    <string name="id">ID:</string>
+</resources>

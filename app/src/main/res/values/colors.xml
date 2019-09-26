@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f74a47</color>
+    <color name="colorPrimaryDark">#da4747</color>
+    <color name="colorAccent">#706d6b</color>
+    <color name="background_list">#eaeaea</color>
+    <color name="add_Btn">#b3b1b1</color>
+    <color name="nova_receita">#181818</color>
+    <color name="background_receita">#8cc9c8c8</color>
+</resources>
