@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon_recipe"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon_recipe"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Activities.MainActivity">
@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".Activities.NovaReceita" />
         <activity android:name=".Activities.Receitas" />
+        <activity android:name=".Activities.EditarReceita" />
     </application>
 
 </manifest>

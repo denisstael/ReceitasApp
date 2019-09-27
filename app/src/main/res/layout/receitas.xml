@@ -18,11 +18,11 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tv_nome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="30sp"
-            android:text="@string/nome"
             android:textColor="@color/colorPrimary"
             android:background="@color/background_receita"/>
 
@@ -37,14 +37,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:text="@string/ingredientes"/>
 
             <TextView
                 android:id="@+id/tv_ingredientes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
+                android:textSize="18sp"
                 android:paddingTop="5dp"/>
 
         </LinearLayout>
@@ -60,17 +60,31 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:text="@string/modo_preparo"/>
 
             <TextView
                 android:id="@+id/tv_modo_preparo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
+                android:textSize="18sp"
                 android:paddingTop="5dp"/>
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/editar"
+            android:text="@string/editar"
+            android:textColor="@color/nova_receita"
+            android:background="@color/add_Btn"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
     </LinearLayout>
+
 </RelativeLayout>
