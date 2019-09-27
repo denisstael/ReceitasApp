@@ -10,4 +10,9 @@
     <string name="cancelar">Cancelar</string>
     <string name="id">ID:</string>
     <string name="editar">Editar</string>
+    <string name="sair">Sair</string>
+    <string name="realmente_sair">Você realmente deseja sair?</string>
+    <string name="nao">Não</string>
+    <string name="sim">Sim</string>
+
 </resources>
