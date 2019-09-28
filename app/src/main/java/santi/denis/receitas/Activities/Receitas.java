@@ -5,10 +5,9 @@ import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 import santi.denis.receitas.R;
@@ -59,13 +58,33 @@ public class Receitas extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) { //Botão adicional na ToolBar
         switch (item.getItemId()) {
             case android.R.id.home:  //ID do seu botão (gerado automaticamente pelo android, usando como está, deve funcionar
-                startActivity(new Intent(this, MainActivity.class));  //O efeito ao ser pressionado do botão (no caso abre a activity)
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                    finishAffinity();  //Método para matar a activity e não deixa-lá indexada na pilhagem
-                }
+                funcao();
                 break;
             default:break;
         }
         return true;
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        //Handle the back button
+        if(keyCode == KeyEvent.KEYCODE_BACK) {
+            funcao();
+            return true;
+        }
+        else {
+            return super.onKeyDown(keyCode, event);
+        }
+    }
+
+    private void funcao() {
+        Intent intent = new Intent(this, MainActivity.class);
+        Bundle params = new Bundle();
+        params.putString("codigo", codigo);
+        intent.putExtras(params);
+        startActivity(intent);  //O efeito ao ser pressionado do botão (no caso abre a activity)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            finishAffinity();  //Método para matar a activity e não deixa-lá indexada na pilhagem
+        }
     }
 }
